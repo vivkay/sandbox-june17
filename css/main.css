@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+hr {
+	margin:  20px -20px;
+	border-color: #abe8c4;
+	border-style:  dashed;
+}
+
+h1 {
+	font-family:  "times new roman", serif;
+	margin-bottom:  0;
+}
+
+h2 {
+	color:  #7dce9f;
+	font-family: "helvetica", sans-serif;
+	font-size:  1em;
+	padding-top:  0;
+}
+
+
+/* ------ INITIAL CAPITAL ----- */
+.initialcap {
+	font-family: "times new roman", serif;
+	font-size:  1em;
+	margin: 2em 0;
+}
+
+/* Use pseudo elements to create an initial cap */
+
+.initialcap::first-letter {
+	color:  #8ef2d1;
+	font-size: 5em;
+	font-family:  "Georgia", serif;
+	background-color:  black;
+	padding:  20px;
+}
+
+
+/* ------ FOLDED CORNER ----- */
+/* Tutorial for folded corner here http://nicolasgallagher.com/pure-css-folded-corner-effect/ */
+.note {
+	background-color: #8ef2d1;
+	width:  50%;
+	padding:  2em;
+	position:  relative;
+	overflow: hidden;
+}
+
+.note:before {
+	content: "";
+	position: absolute;
+	top:  0;
+	right: 0;
+	border-width:  0 50px 50px 0;
+	border-style:  solid;
+	border-color: #6cd1af #fff;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+/* ------ CLICK TEST ----- */
+.box {
+	background-color: #8ef2d1;
+	width:  400px;
+	height:  100px;
+	padding:  2em;
+}
+
+.js-active {
+	background-color: pink;
+	width:  400px;
+	height:  100px;
+	padding:  2em;
+
+}
