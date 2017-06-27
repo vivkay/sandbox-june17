@@ -96,3 +96,55 @@ h2 {
 	padding:  2em;
 
 }
+
+/* ------ SPRITE ----- */
+.sandwich {
+	width:  100px;
+	height:  100px;
+	background-image: url('../img/sprite.png');
+	background-repeat:  no-repeat;
+}
+
+.full {
+  height: 100px;
+  background-position: 0 0;
+}
+
+.bite1 {
+  height: 100px;
+  background-position: -100px 0;
+}
+
+.bite2 {
+  height: 100px;
+  background-position: -200px 0;
+}
+
+.bite3 {
+  height: 100px;
+  background-position: -300px 0;
+}
+
+.crumbs {
+	height:  100px;
+	background-position: -400px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
